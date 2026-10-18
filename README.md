@@ -3,10 +3,8 @@
 
 > A production AWS setup for a microservices platform serving web and mobile clients, deployed across Mumbai and Singapore, and moved from a public-subnet design to a private-subnet, load-balanced design.
 
-**Walkthrough video:** [add your Loom / YouTube link here]
-
-**Role:** DevOps Engineer, [Company name], [month year] to present
-**My contribution:** [One or two lines, only what you personally did. Example: "Redesigned the network layout, set up the internal ALB and target groups, and maintained the Jenkins deployment pipelines."]
+**Role:** DevOps Engineer, Corpverse Technology pvt ltd., May 2024 to present. I joined after the infrastructure was built and now manage it in production.
+**My contribution:** Redesigned the network layout, set up the internal ALB and target groups, and maintained the Jenkins deployment pipelines.
 
 ---
 
@@ -52,35 +50,25 @@ Reference diagram for the earlier design: `architecture-singapore.png`
 - **Build and deploy:** Jenkins (hosted in the Singapore region) deploying to both Mumbai and Singapore environments
 - **Flow:** commit → pipeline trigger → build → deploy to target servers → health check through the load balancer
 
-A simplified, sanitized example pipeline is in [`examples/Jenkinsfile`](examples/Jenkinsfile). *(Optional: add this file, written with dummy values.)*
+A simplified, sanitized example pipeline is in Jenkinsfile.
 
 ## 5. Monitoring and logging
 
 - Application and system logs from every service are shipped to Graylog
 - Search, filtering and alerting happen from one place instead of per server
 
-## 6. Results
-
-Add only real numbers you can stand behind:
-
-- Uptime: [value]
-- Deployment time: [before] → [after]
-- Incidents or downtime reduced: [value]
-- Cost impact: [value]
-
 ## 7. Tech stack
 
-AWS (EC2, VPC, ALB, Route 53, S3, SES), MongoDB, Redis, Elasticsearch, MySQL, GitLab, Jenkins, Graylog, Firebase, Linux, Bash
+AWS (EC2, VPC, ALB, Route 53, S3, SES), MongoDB, Redis, Elasticsearch, MySQL, GitLab, Jenkins, Graylog, Firebase, Linux, Bash).
 
 ## 8. Repository contents
 
 ```
 .
+├── Jenkinsfile
+├── Prod KAF.drwaing.pdf
 ├── README.md
-├── architecture-mumbai.png
-├── architecture-singapore.png
-└── examples/
-    └── Jenkinsfile        (optional, sanitized sample)
+
 ```
 
 ## Notes
