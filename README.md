@@ -23,8 +23,6 @@ Goals:
 
 ## 2. Architecture
 
-![Mumbai production architecture](architecture-mumbai.png)
-
 **Traffic flow:** Web and mobile clients → Route 53 → public-facing ALB → web tier → internal ALB → services → data tier.
 
 | Layer | What runs there |
